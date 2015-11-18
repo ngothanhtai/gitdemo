@@ -18,7 +18,7 @@ class RepoTableViewCell: UITableViewCell {
     @IBOutlet weak var forkLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        descriptionLabel.preferredMaxLayoutWidth = descriptionLabel.frame.size.width
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -33,7 +33,11 @@ class RepoResultsViewController: UIViewController {
         searchBar.sizeToFit()
         navigationItem.titleView = searchBar
         
-        tableView.estimatedRowHeight = UITableViewAutomaticDimension
+//        tableView.estimatedRowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
 
         doSearch()
     }
